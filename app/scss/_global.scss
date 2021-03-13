@@ -1,0 +1,10 @@
+body {
+    color: $default;
+    @extend %rubik-500;
+}
+
+.container-header {
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
