@@ -1,4 +1,8 @@
 $(function() {
+
+
+
+
     $('.slider-top__inner').slick({
         arrows: false,
         dots: true,
@@ -6,4 +10,6 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 3000
     });
+
+    var mixer = mixitup('.products__content');
 });
