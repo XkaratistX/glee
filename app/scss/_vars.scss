@@ -21,6 +21,11 @@ $light: #a3bbc8;
     font-weight: 400;
 }
 
+%dms-500 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 500;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
 }
