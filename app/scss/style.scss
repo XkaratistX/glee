@@ -159,7 +159,7 @@
     }
 }
 
-.slider-top {
+.slider {
     background-image: url('../images/slider-top-bg.jpg');
     background-repeat: no-repeat;
     padding: 225px 0 58px;
@@ -781,6 +781,67 @@
 
 .google {
     padding: 12px 9px;
+}
+
+.terms {
+    &__container {
+        margin: 0 auto;
+        background-color: #edf1f4;
+        padding: 35px 0;
+    }
+    &__title {
+        @extend %rubik-300;
+        color: #222933;
+        font-size: 36px;
+        line-height: 24px;
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+
+.breadcrumbs-terms {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before {
+        content: "/";
+        position: absolute;
+        margin: 0 auto;
+        padding-right: 65px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        padding-left: 20px;
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #7b7b7b;
+    }
+}
+
+.terms-content {
+    text-align: center;
+    &__title {
+        @extend %rubik-700;
+        font-size: 24px;
+        line-height: 40px;
+        color: $text;
+        padding: 115px 0 25px 0;
+        margin-left: -30px;
+    }
+    &__list {
+        padding-bottom: 25px;
+        list-style: decimal-leading-zero;
+        font-size: 16px;
+        line-height: 30px;
+        color: $text;
+    }
+    &__text {
+        color: $text;
+        margin-left: -30px;
+    }
 }
 
 @import 'media';
