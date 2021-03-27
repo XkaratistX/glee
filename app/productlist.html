@@ -63,112 +63,126 @@
         </div>
     </header>
     <main class="main">
-        <section class="terms">
-            <div class="terms__container">
-                <h2 class="terms__title">Terms & Conditions</h2>
-                <div class="breadcrumbs-terms">
-                    <ul class="breadcrumbs-terms__list">
-                        <li class="breadcrumbs-terms__item">
-                            <a class="breadcrumbs-terms__link" href="#">
+        <section class="product-list first">
+            <div class="product-list__container">
+                <h2 class="product-list__title">Product List 1</h2>
+                <div class="breadcrumbs-product">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">
                               Home
                             </a>
                         </li>
-                        <li class="breadcrumbs-terms__item">
-                            <a class="breadcrumbs-terms__link" href="#">
-                              Terms & Conditions
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">
+                              Product list 1
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="terms-contnet">
+            <div class="product">
                 <div class="wrapper">
-                    <h4 class="terms-content__title">Types of Personal Information We Collect</h4>
-                    <ol class="terms-content__item">
-                        <li class="terms-content__list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore
-                        </li>
-                        <li class="terms-content__list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore
-                        </li>
-                        <li class="terms-content__list">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </li>
-                        <li class="terms-content__list">Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </li>
-                        <li class="terms-content__list">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        </li>
-                    </ol>
-                    <h4 class="terms-content__title">How marketpmss.com Collects Personal Infonnation</h4>
-                    <p class="terms-content__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore </p>
-                    <h4 class="terms-content__title">How marketpmss.com Collects Personal Infonnation</h4>
-                    <p class="terms-content__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore </p>
+                    <div class="product__inner">
+                        <div class="product__filters filter">
+                            <div class="product__item filter-category">
+                                <h3 class="filter__title filter-line__category">CATEGORY</h3>
+                                <form class="filter-category__form" action="#">
+                                    <label class="filter-category__label">
+                                      <input class="filter-category__input" type="checkbox" checked>
+                                      <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Chair</span>
+                                        <span class="filter-category__text">></span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                      <input class="filter-category__input" type="checkbox">
+                                      <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Table</span>
+                                        <span class="filter-category__text">></span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                      <input class="filter-category__input" type="checkbox">
+                                      <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Lamp</span>
+                                        <span class="filter-category__text">></span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                      <input class="filter-category__input" type="checkbox">
+                                      <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Watch</span>
+                                        <span class="filter-category__text">></span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-category__label">
+                                      <input class="filter-category__input" type="checkbox">
+                                      <div class="filter-category__checkbox">
+                                        <span class="filter-category__text">Clock</span>
+                                        <span class="filter-category__text">></span>
+                                      </div>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="product__item filter-price">
+                                <h3 class="filter__title filter-line__price">Price</h3>
+                                <form class="filter-price__form">
+                                    <input class="filter-price__input" type="text" data-min="0.00" data-max="1000.00" data-from="0.00" data-to="1000.00">
+                                    <div class="filter-price__box">
+                                        <span class="filter-price__from"></span>
+                                        <span class="filter-price__to"></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="product__item filter-brand">
+                                <h3 class="filter__title filter-line__brand">Brand</h3>
+                                <form class="filter-brand__form" action="#">
+                                    <label class="filter-brand__label">
+                                      <input class="filter-brand__input" type="checkbox" checked>
+                                      <div class="filter-brand__checkbox">
+                                        <span class="filter-brand__text">RFL</span>
+                                        <span class="filter-brand__text">(10)</span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-brand__label">
+                                      <input class="filter-brand__input" type="checkbox">
+                                      <div class="filter-brand__checkbox">
+                                        <span class="filter-brand__text">Brothers</span>
+                                        <span class="filter-brand__text">(21)</span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-brand__label">
+                                      <input class="filter-brand__input" type="checkbox">
+                                      <div class="filter-brand__checkbox">
+                                        <span class="filter-brand__text">Regal</span>
+                                        <span class="filter-brand__text">(3)</span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-brand__label">
+                                      <input class="filter-brand__input" type="checkbox">
+                                      <div class="filter-brand__checkbox">
+                                        <span class="filter-brand__text">Nadia</span>
+                                        <span class="filter-brand__text">(14)</span>
+                                      </div>
+                                    </label>
+                                    <label class="filter-brand__label">
+                                      <input class="filter-brand__input" type="checkbox">
+                                      <div class="filter-brand__checkbox">
+                                        <span class="filter-brand__text">Otobi</span>
+                                        <span class="filter-brand__text">(6)</span>
+                                      </div>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product-content">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="new">
-            <div class="wrapper">
-                <div class="new__top">
-                    <h2 class="new__title">Our Insights & Articles</h2>
-                    <a class="new__link" href="#">View All
-                    <span class="new__link-btn">></span>
-                    </a>
-                </div>
-                <div class="new__content-items">
-                    <div class="new__content">
-                        <img class="new__content-img" src="images/new/new-1.jpg" alt="photo">
-                        <span class="new__content-lible">NEWS</span>
-                        <div class="new__content-box">
-                            <p class="new__content-text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <div class="new__content-inner">
-                                <img src="images/icon/calendar.svg" alt="calendear icon">
-                                <p class="new__content-subtitle"> 28 JANUARY, 2020</p>
-                                <img src="images/icon/user.svg" alt="user icon">
-                                <p class="new__content-admin"> BY ADMIN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="new__content new__middle">
-                        <img class="new__content-img" src="images/new/new-2.jpg" alt="photo">
-                        <span class="new__content-lible">NEWS</span>
-                        <div class="new__content-box">
-                            <p class="new__content-text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <div class="new__content-inner">
-                                <img src="images/icon/calendar.svg" alt="calendear icon">
-                                <p class="new__content-subtitle"> 28 JANUARY, 2020</p>
-                                <img src="images/icon/user.svg" alt="user icon">
-                                <p class="new__content-admin"> BY ADMIN</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="new__content">
-                        <img class="new__content-img" src="images/new/new-3.jpg" alt="photo">
-                        <span class="new__content-lible">NEWS</span>
-                        <div class="new__content-box">
-                            <p class="new__content-text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            <div class="new__content-inner">
-                                <img src="images/icon/calendar.svg" alt="calendear icon">
-                                <p class="new__content-subtitle"> 28 JANUARY, 2020</p>
-                                <img src="images/icon/user.svg" alt="user icon">
-                                <p class="new__content-admin"> BY ADMIN</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="partner">
-            <div class="wrapper">
-                <div class="partner__items">
-                    <img class="partner__img" src="images/partner/partner-1.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-2.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-3.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-4.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-5.png" alt="partner photo">
-                </div>
-            </div>
-        </div>
     </main>
     <footer class="footer">
         <div class="container">
