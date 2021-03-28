@@ -18,7 +18,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
-    "mixitup": "^3.3.1"
+    "mixitup": "^3.3.1",
+    "npm": "^7.7.5",
+    "rateyo": "^2.3.2"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",

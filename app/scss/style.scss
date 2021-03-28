@@ -544,11 +544,13 @@
         @extend %rubik-400;
         font-size: 12px;
         line-height: 30px;
+        color: $text;
     }
     &__content-admin {
         @extend %rubik-400;
         font-size: 12px;
         line-height: 30px;
+        color: $text;
     }
     &__content-inner {
         padding-top: 20px;
@@ -849,29 +851,6 @@
     }
 }
 
-.breadcrumbs-product {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding-top: 15px;
-    &::before {
-        content: "/";
-        position: absolute;
-        margin: 0 auto;
-        padding-right: 25px;
-    }
-    &__list {
-        display: flex;
-    }
-    &__link {
-        padding-left: 20px;
-        @extend %rubik-400;
-        font-size: 14px;
-        line-height: 24px;
-        color: #7b7b7b;
-    }
-}
-
 .product {
     padding: 110px 0;
     &__inner {
@@ -912,6 +891,12 @@
     background-image: url('../images/icon/title-line.svg');
     background-repeat: no-repeat;
     background-position: 75px;
+}
+
+.filter-line__recent {
+    background-image: url('../images/icon/title-line.svg');
+    background-repeat: no-repeat;
+    background-position: 180px;
 }
 
 .filter-brand {
@@ -959,30 +944,28 @@
 
 .filter-brand__form,
 .filter-category__form,
-.filter-price__form {
+.filter-price__form,
+.filter-recent {
     padding-top: 30px;
 }
 
 .filter-price {
     margin-bottom: 45px;
-}
-
-.filter-price__box {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.filter-price__from::before {
-    content: "$";
-    position: absolute;
-    left: -10px;
-}
-
-.filter-price__to::before {
-    content: "$";
-    position: absolute;
-    right: 36px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__from::before {
+        content: "$";
+        position: absolute;
+        left: -10px;
+    }
+    &__to::before {
+        content: "$";
+        position: absolute;
+        right: 36px;
+    }
 }
 
 .irs--flat .irs-line {
@@ -1036,6 +1019,33 @@
     line-height: 1.333;
     background-color: transparent;
     display: none;
+}
+
+.filter-recent {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 180px;
+        padding: 12px 0;
+    }
+    &__title {
+        @extend %rubik-400;
+        color: $default;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__star {
+        padding-top: 5px;
+    }
+    &__price {
+        color: $default;
+    }
+}
+
+.products__content-top {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @import 'media';
