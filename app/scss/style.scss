@@ -578,7 +578,8 @@
 
 .about,
 .product-list,
-.login {
+.login,
+.blogs {
     &__container {
         margin: 0 auto;
         background-color: #edf1f4;
@@ -966,6 +967,12 @@
     background-image: url('../images/icon/title-line.svg');
     background-repeat: no-repeat;
     background-position: 180px;
+}
+
+.filter-line__post {
+    background-image: url('../images/icon/title-line.svg');
+    background-repeat: no-repeat;
+    background-position: 160px;
 }
 
 .filter-brand {
@@ -1399,6 +1406,151 @@
         font-size: 36px;
         color: $text;
         margin-bottom: 65px;
+    }
+}
+
+.blog-page {
+    padding: 120px 0 70px;
+    &__aside {
+        width: 270px;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__item {
+        width: 830px;
+        margin-right: 70px;
+        margin-bottom: 50px;
+    }
+    &__img {
+        display: block;
+        min-width: 830px;
+        height: 500px;
+    }
+    &__box {
+        margin-top: -89px;
+        width: 270px;
+        padding: 30px 20px;
+        display: flex;
+        background-color: #a3bbc8;
+        align-items: center;
+        z-index: 2;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__box-img {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+    &__box-subtitle {
+        margin-right: 20px;
+    }
+    &__box-subtitle,
+    &__box-admin {
+        color: #fff;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    &__title {
+        @extend %rubik-400;
+        font-size: 36px;
+        line-height: 26px;
+        color: $default;
+        margin-bottom: 40px;
+    }
+    &__text {
+        color: $text;
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    &__link {
+        display: inline-block;
+    }
+    &__btn {
+        padding: 20px 85px 25px 20px;
+        border: 1px solid $light;
+        position: relative;
+        color: $light;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 31px;
+            right: 20px;
+            width: 22px;
+            height: 9px;
+            background-image: url('../images/icon/arrow-blue.svg');
+        }
+    }
+    &__form {
+        display: flex;
+        margin-bottom: 55px;
+    }
+    &__input {
+        width: 230px;
+        height: 50px;
+        padding: 0 10px;
+        border: 3px solid $light;
+        border-radius: 5px;
+    }
+    &__aside-btn {
+        border: none;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $light;
+        margin-left: -10px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.recent-item {
+    .filter-line__post {
+        margin-bottom: 35px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        margin-right: 30px;
+    }
+    &__title {
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $default;
+        margin-bottom: 10px;
+    }
+    &__date {
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 20px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 16px;
+            width: 15px;
+            background-image: url('../images/icon/calendar-blog.svg');
+            background-repeat: no-repeat;
+        }
     }
 }
 
