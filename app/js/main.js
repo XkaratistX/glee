@@ -1,4 +1,12 @@
 $(function() {
+    $('.menu__btn').on('click', function() {
+        $('.menu__items').toggleClass('menu__items--active');
+    });
+
+    $('.footer-top__title').on('click', function() {
+        $(this).next().slideToggle();
+        $(this).toggleClass('active');
+    });
 
     $('.related-slider__top').slick({
         infinite: true,
