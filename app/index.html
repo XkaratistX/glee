@@ -65,7 +65,7 @@
             </div>
         </div>
     </header>
-    <!-- <main class="main">
+    <main class="main">
         <section class="slider-top">
             <div class="container">
                 <div class="slider">
@@ -76,7 +76,7 @@
                                 <p class="slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
                                 <a class="slider__btn slider-btn" href="#">Shop Now</a>
                             </div>
-                            <img src="images/photo-1.png" alt="slider photo">
+                            <img class="slider__img" src="images/photo-1.png" alt="slider photo">
                         </div>
                         <div class="slider__item">
                             <div class="slider__content">
@@ -84,7 +84,7 @@
                                 <p class="slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
                                 <a class="slider__btn slider-btn" href="#">Shop Now</a>
                             </div>
-                            <img src="images/photo-1.png" alt="slider photo">
+                            <img class="slider__img" src="images/photo-1.png" alt="slider photo">
                         </div>
                         <div class="slider__item">
                             <div class="slider__content">
@@ -92,7 +92,7 @@
                                 <p class="slider__text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
                                 <a class="slider__btn slider-btn" href="#">Shop Now</a>
                             </div>
-                            <img src="images/photo-1.png" alt="slider photo">
+                            <img class="slider__img" src="images/photo-1.png" alt="slider photo">
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                             <p class="benefits__text">Contact us 24 hours a day, 7 days a week.</p>
                         </div>
                     </div>
-                    <img src="images/icon/line.svg" alt="line devide">
+                    <img class="benefits__line" src="images/icon/line.svg" alt="line devide">
                     <div class="benefits__item">
                         <img class="benefits__img" src="images/icon/track.svg" alt="track icon">
                         <div class="benefits__content">
@@ -116,7 +116,7 @@
                             <p class="benefits__text">Free shipping on all US order.</p>
                         </div>
                     </div>
-                    <img src="images/icon/line.svg" alt="line devide">
+                    <img class="benefits__line" src="images/icon/line.svg" alt="line devide">
                     <div class="benefits__item">
                         <img class="benefits__img" src="images/icon/key.svg" alt="key icon">
                         <div class="benefits__content">
@@ -362,22 +362,30 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="products__bottom-items">
-                    <div class="products__bottom-item">
-                        <img class="products__bottom-img" src="images/products/product-9.png" alt="">
-                        <div class="products__bottom-content">
-                            <h6 class="products__bottom-item-title">Mirum Notare Tellus</h6>
-                            <p class="products__bottom-item-text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
-                            <a class="products__bottom-btn products-link" href="#">View More</a>
+            </div>
+        </section>
+        <section class="recomended">
+            <div class="container">
+                <div class="recomended__inner">
+                    <div class="recomended__left-box">
+                        <div class="recomended__left-img">
+                            <img src="images/products/product-9.png" alt="recomended icon">
+                        </div>
+                        <div class="recomended__left-content">
+                            <h4 class="recomended__left-title">Mirum Notare Tellus</h4>
+                            <p class="recomended__left-text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+                            <a href="#" class="recomended__left-btn">View More</a>
                         </div>
                     </div>
-                    <div class="products__bottom-item">
-                        <img class="products__bottom-img" src="images/products/product-10.png" alt="">
-                        <div class="products__bottom-content">
-                            <h6 class="products__bottom-item-title">Malesuada Tempor Euismod</h6>
-                            <p class="products__bottom-item-text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
-                            <a class="products__bottom-btn products-link" href="#">View More</a>
+                    <div class="recomended__right-box">
+                        <div class="recomended__right-img">
+                            <img src="images/products/product-10.png" alt="recomended icon">
+                        </div>
+                        <div class="recomended__right-content">
+                            <h4 class="recomended__right-title">Malesuada Tempor Euismod
+                            </h4>
+                            <p class="recomended__right-text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+                            <a href="#" class="recomended__right-btn">View More</a>
                         </div>
                     </div>
                 </div>
@@ -480,7 +488,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="new__content new__middle">
+                    <div class="new__content">
                         <img class="new__content-img" src="images/new/new-2.jpg" alt="photo">
                         <a class="new__content-lible" href="#">NEWS</a>
                         <div class="new__content-box">
@@ -517,15 +525,25 @@
         <div class="partner">
             <div class="wrapper">
                 <div class="partner__items">
-                    <img class="partner__img" src="images/partner/partner-1.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-2.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-3.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-4.png" alt="partner photo">
-                    <img class="partner__img" src="images/partner/partner-5.png" alt="partner photo">
+                    <div class="partner__item">
+                        <img class="partner__img" src="images/partner/partner-1.png" alt="partner photo">
+                    </div>
+                    <div class="partner__item">
+                        <img class="partner__img" src="images/partner/partner-2.png" alt="partner photo">
+                    </div>
+                    <div class="partner__item">
+                        <img class="partner__img" src="images/partner/partner-3.png" alt="partner photo">
+                    </div>
+                    <div class="partner__item">
+                        <img class="partner__img" src="images/partner/partner-4.png" alt="partner photo">
+                    </div>
+                    <div class="partner__item">
+                        <img class="partner__img" src="images/partner/partner-5.png" alt="partner photo">
+                    </div>
                 </div>
             </div>
         </div>
-    </main>-->
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
