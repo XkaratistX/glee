@@ -85,6 +85,7 @@
         flex-wrap: wrap;
         &__title {
             pointer-events: auto;
+            cursor: pointer;
         }
         &__nav-form {
             text-align: center;
@@ -159,6 +160,7 @@
     .partner {
         &__items {
             flex-wrap: wrap;
+            align-items: center;
         }
         &__item {
             height: 150px;
