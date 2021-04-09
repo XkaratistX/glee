@@ -851,14 +851,12 @@
             &::after {
                 content: "";
                 position: absolute;
-                top: 0;
-                left: 0;
             }
         }
         .team-btn {
-            background-image: url('../images/arrow.svg');
             background-position: 145px;
             background-repeat: no-repeat;
+            background-image: url('../images/arrow.svg');
         }
         &__name {
             @extend %dms-700;
@@ -1960,3 +1958,5 @@
     }
     
     @import 'media';
+    @import '_index';
+    @import'_about';
