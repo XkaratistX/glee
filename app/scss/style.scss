@@ -1473,9 +1473,7 @@
             margin-bottom: 50px;
         }
         &__img {
-            display: block;
-            min-width: 830px;
-            height: 500px;
+            object-fit: cover;
         }
         &__box {
             margin-top: -89px;
@@ -1523,6 +1521,7 @@
             border: 1px solid $light;
             position: relative;
             color: $light;
+            display: block;
             &::after {
                 content: "";
                 position: absolute;
@@ -1579,7 +1578,7 @@
                 content: "";
                 position: absolute;
                 width: 5px;
-                height: 160px;
+                height: 100%;
                 background-color: #a3bbc8;
                 left: 0;
                 top: 0;
@@ -1691,10 +1690,9 @@
         &__comments-info {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 10px;
         }
         &__comments-text {
-            width: 705px;
+            width: 100%;
         }
         &__comments-name {
             @extend %rubik-700;
@@ -1731,7 +1729,7 @@
             border-bottom: 1px solid #ececec;
         }
         &__comments-bottom__text {
-            width: 555px;
+            width: 100%;
             color: $text;
         }
         &__comments-content__bottom {
@@ -1960,3 +1958,4 @@
     @import 'media';
     @import '_index';
     @import'_about';
+    @import'_blog-details'
