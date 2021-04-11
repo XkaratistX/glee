@@ -1,11 +1,24 @@
 @import 'vars';
- @import 'fonts';
- @import 'reset';
- @import 'global';
- @import 'libs';
- @import 'media';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+@import 'media';
+@media(max-width:1240px) {}
 
- @media(max-width:1240px){}
- @media(max-width:1050px){}
- @media(max-width:600px){}
- @media(max-width:470px){}
+@media(max-width:1050px) {
+    .modal {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width:520px) {}
+
+@media(max-width:470px) {
+    .modal {
+        &__btn {
+            padding: 13px 10px;
+        }
+    }
+}
