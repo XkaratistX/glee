@@ -1,0 +1,64 @@
+ @import 'vars';
+ @import 'fonts';
+ @import 'reset';
+ @import 'global';
+ @import 'libs';
+ @import 'media';
+ @media(max-width:1240px) {
+     .new {
+         &__content-items {
+             flex-wrap: wrap;
+         }
+         &__content {
+             margin-bottom: 20px;
+         }
+     }
+     .about-content,
+     .statistics__items {
+         flex-wrap: wrap;
+         align-items: center;
+     }
+     .statistics__item {
+         margin: 0 0 10px;
+     }
+ }
+ 
+ @media(max-width:1050px) {
+     .partner {
+         &__items {
+             flex-wrap: wrap;
+             align-items: center;
+         }
+         &__item {
+             height: 150px;
+             width: 150px;
+             margin: 0 auto;
+         }
+     }
+     .team {
+         &__inner {
+             flex-wrap: wrap;
+         }
+         &__content {
+             margin-bottom: 30px;
+             margin-right: 0;
+             width: 100%;
+         }
+     }
+ }
+ 
+ @media(max-width:600px) {}
+ 
+ @media(max-width:470px) {
+     .new {
+         &__title {
+             font-size: 15px;
+         }
+         &__content-lible {
+             top: 175px;
+         }
+         &__content-subtitle {
+             margin-right: 0;
+         }
+     }
+ }
