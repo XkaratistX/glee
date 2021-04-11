@@ -47,4 +47,14 @@
     }
 }
 
-@media(max-width:470px) {}
+@media(max-width:600px) {
+    .product-details {
+        &__slide {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+    }
+    .product-slide__big {
+        width: 100%;
+    }
+}
