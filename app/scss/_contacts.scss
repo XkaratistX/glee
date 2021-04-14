@@ -41,7 +41,7 @@
 @media(max-width:470px) {
     .partner {
         &__items {
-            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
         }
     }
