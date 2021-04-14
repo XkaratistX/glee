@@ -1,11 +1,26 @@
 @import 'vars';
- @import 'fonts';
- @import 'reset';
- @import 'global';
- @import 'libs';
- @import 'media';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+@import 'media';
+@media(max-width:1240px) {}
 
- @media(max-width:1240px){}
- @media(max-width:1050px){}
- @media(max-width:600px){}
- @media(max-width:470px){}
+@media(max-width:1050px) {
+    .terms-content {
+        &__title {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media(max-width:600px) {}
+
+@media(max-width:470px) {
+    .partner {
+        &__items {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+}

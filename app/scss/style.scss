@@ -959,7 +959,6 @@
             line-height: 40px;
             color: $text;
             padding: 115px 0 25px 0;
-            margin-left: -30px;
         }
         &__list {
             padding-bottom: 25px;
@@ -967,10 +966,10 @@
             font-size: 16px;
             line-height: 30px;
             color: $text;
+            margin-left: 30px;
         }
         &__text {
             color: $text;
-            margin-left: -30px;
         }
     }
     
@@ -1976,3 +1975,5 @@
     @import'_contacts';
     @import'_login';
     @import'_product-details';
+    @import'_productlist';
+    @import'_terms'
