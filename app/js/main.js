@@ -1,4 +1,17 @@
 $(function() {
+    $('.filter-line__category').on('click', function() {
+        $('.filter-category__form').slideToggle();
+    });
+
+    $('.filter-line__brand').on('click', function() {
+        $('.filter-brand__form').slideToggle();
+    });
+
+    $('.filter-line__recent').on('click', function() {
+        $('.filter-recent__content').slideToggle();
+    });
+
+
     $('.menu__btn').on('click', function() {
         $('.menu__items').toggleClass('menu__items--active');
     });
